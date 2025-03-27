@@ -1,0 +1,407 @@
+{
+    "frames": {
+      "video-config": {
+        "kind": "exp-video-config",
+        "troubleshootingIntro": "If you're having any trouble getting your webcam set up, please feel free to email Shengyi Wu at shengyiw@mit.edu and we'd be glad to help you out!"
+      },
+      "survey-consent": {
+        "kind": "exp-lookit-survey-consent",
+        "title": "Consent for a Child’s Participation in a Study for Educational Purposes Only \n Let's Learn About Animals!",
+        "items": [
+          {
+            "kind": "text-block",
+            "text": "Dear Parents,<br><br>We are inviting your child to participate in a study as part of training MIT undergraduate students in a course on infant and child development. The vast majority of studies posted on Children Helping Science are for research purposes. Studies purely for educational purposes constitute a tiny minority of studies on the platform <1%. However, this particular study will be used only for training students. The results of the study will not be published anywhere."
+          },
+          {
+            "kind": "text-block",
+            "text": "This study looks at how children learn concepts and categories. In this study, we show your child a video explaining a category of animals, show a few examples of animals in the category, and test their understanding of the category."
+          },
+          {
+            "kind": "text-block",
+            "text": "All parts of the experiment will be recorded, but no videos will be downloaded and all videos will be available for viewing only to the students, faculty, and teaching assistants in the class for the duration of the class and will be deleted by December 20th, 2024."
+          },
+          {
+            "kind": "text-block",
+            "text": "I understand that participation in this study is entirely voluntary, and if I decide that I do not want my child to take part, they can stop taking part in this study at any time without giving a reason."
+          },
+          {
+            "kind": "text-block",
+            "text": "If you have questions about the details of the study, you can contact shengyiw@mit.edu. If you have any additional questions, you can contact the faculty member teaching the class, Laura Schulz at lschulz@mit.edu."
+          },
+          {
+            "kind": "checkbox-item",
+            "text": "I am this child’s parent or legal guardian and I give my permission for the child to participate in this study",
+            "label": "consent"
+          }
+        ]
+      },
+      "video-quality": {
+        "kind": "exp-video-config-quality",
+        "title": "Webcam setup for the study",
+        "introText": "Please check each of the following to ensure we're able to use your video:",
+        "requireItemConfirmation": true,
+        "completedItemText": "Did it!",
+        "instructionBlocks": [
+          {
+            "text": "<strong>Make sure the webcam you're using is roughly centered</strong> relative to this monitor. This makes it much easier for us to tell whether your child is pointing to the left or right!",
+            "image": {
+              "src": "https://s3.amazonaws.com/lookitcontents/website/centering.png",
+              "alt": "Example images of using centered external webcam on monitor or built-in webcam on laptop."
+            }
+          },
+          {
+            "text": "<strong>Turn off any other monitors</strong> connected to your computer, besides the one with the centered webcam. (If there's just one monitor, you're all set!)",
+            "image": {
+              "src": "https://s3.amazonaws.com/lookitcontents/website/monitors.png",
+              "alt": "Example images showing laptop screen turned off if using external monitor and webcam, or external monitor turned off if using built-in webcam and laptop screen."
+            }
+          },
+          {
+            "text": "Check the lighting by making sure you can <strong>clearly see your own eyes</strong> on the webcam view to the right. You may need to either turn on a light or reduce light coming from behind you.",
+            "image": {
+              "src": "https://s3.amazonaws.com/lookitcontents/website/lighting.png",
+              "alt": "Example images showing good lighting, room too dark, and backlit scene where eyes are not visible."
+            }
+          },
+          {
+            "text": "If it's practical, <strong>minimize exciting things</strong> that are visible behind or to the side of the screen--for instance, by facing a wall instead of the kitchen. (If this isn't practical for you, don't worry about it--just check the box!)",
+            "image": {
+              "src": "https://s3.amazonaws.com/lookitcontents/website/distractions.png",
+              "alt": "Example images showing a child and puppy next to the computer, versus a computer just on its own."
+            }
+          }
+        ],
+        "requireTestVideo": false,
+        "showRecordMenu": false,
+        "recordingInstructionText": "You should be able to see your camera view above."
+      },
+      "instructions": {
+        "kind": "exp-lookit-instructions",
+        "blocks": [
+          {
+            "title": "Overview of what will happen in this study",
+            "listblocks": [
+              {
+                "text": "There will be three phases of each trial: definition, examples, and testing."
+              },
+              {
+                "text": "First, we will define an animal category (e.g. dog). Please make sure your child is paying attention to the video."
+              },
+              {
+                "text": "Next, we will show a screen with many animals. Point out the highlighted examples to your child. For example, (pointing to a poodle) 'This is a poodle. A poodle is a dog.' Only point out these three animals."
+              },
+              {
+                "text": "Lastly, we’ll ask your child if a specific animal is in the category. Your child should responding verbally. For this section, please sit outside of your child’s direct line of sight and try not to influence their answer."
+              }
+            ]
+          },
+          {
+            "text": "Please try playing this sample audio to make sure you'll be able to hear the story.",
+            "title": "Adjust your speakers",
+            "mediaBlock": {
+              "text": "You should hear 'Ready to go?'",
+              "isVideo": false,
+              "sources": [
+                {
+                  "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/audio/ready.mp3",
+                  "type": "audio/mp3"
+                },
+                {
+                  "src": "https://s3.amazonaws.com/lookitcontents/exp-physics-final/audio/ready.ogg",
+                  "type": "audio/ogg"
+                }
+              ],
+              "mustPlay": true,
+              "warningText": "Please try playing the sample audio."
+            }
+          }
+        ],
+        "showWebcam": true,
+        "webcamBlocks": [
+          {
+            "title": "Make sure we can see you",
+            "listblocks": [
+              {
+                "text": "Take a look at your webcam view above. Get comfy, and adjust your own position or the computer as needed so both you and your child are visible."
+              },
+              {
+                "text": "This isn't a Skype call - no one in the lab can see you - but the recorded video of your participation will be sent to the lab to help with data analysis. It's helpful for us to be able to see if your child was pointing or looking confused, for example."
+              }
+            ]
+          }
+        ],
+        "nextButtonText": "Next"
+      },
+      "test-trials": {
+        "sampler": "permute",
+        "kind": "choice",
+        "commonFrameProperties": {
+          "kind": "group"
+        },
+        "frameOptions": [
+          {
+            "kind": "group",
+            "frameList": [
+              {
+                "kind": "exp-lookit-video",
+                "video": {
+                  "source": "mammalDef",
+                  "loop": false
+                },
+                "parentTextBlock": {
+                  "css": {
+                    "font-size": "1.5em"
+                  },
+                  "text": "Please help keep your child's attention. Feel free to replay the audio if your child was distracted.",
+                  "title": "For parents"
+                }
+              },
+              {
+                "kind": "exp-lookit-images-audio",
+                "images": [
+                  {
+                    "id": "mammalEx",
+                    "src": "MAMMAL_EXAMPLES#RAND"
+                  }
+                ],
+                "parameters": {
+                  "MAMMAL_EXAMPLES": ["mammalExGood.png", "mammalExBad.png"]
+                },
+                "parentTextBlock": {
+                  "css": {
+                    "font-size": "1em"
+                  },
+                  "text": " One at a time, point to the highlighted animals, name the animal, and tell your child the animal is a mammal. For example, (pointing to a cat) 'This is a cat. A cat is a mammal.' Only point out these three animals.",
+                  "title": "IMPORTANT! For parents"
+                }
+              },
+              {
+                "kind": "exp-lookit-video",
+                "video": {
+                  "source": "mammalTest",
+                  "loop": false
+                },
+                "parentTextBlock": {
+                  "css": {
+                    "font-size": "1.5em"
+                  },
+                  "text": "Please sit outside of your child’s direct line of sight and try not to influence their answer.",
+                  "title": "For parents"
+                }
+              }
+            ],
+            "commonFrameProperties": {
+              "baseDir": "https://985capstonestimuli.s3.amazonaws.com/",
+              "id": "mammal-group",
+              "videoTypes": ["mp4"],
+              "autoProceed": false,
+              "doRecording": true,
+              "position": "fill"
+            }
+          },
+          {
+            "kind": "group",
+            "frameList": [
+              {
+                "kind": "exp-lookit-video",
+                "video": {
+                  "source": "reptileDef",
+                  "loop": false
+                },
+                "parentTextBlock": {
+                  "css": {
+                    "font-size": "1.5em"
+                  },
+                  "text": "Please help keep your child's attention. Feel free to replay the audio if your child was distracted.",
+                  "title": "For parents"
+                }
+              },
+              {
+                "kind": "exp-lookit-images-audio",
+                "images": [
+                  {
+                    "id": "reptileEx",
+                    "src": "REPTILE_EXAMPLES#RAND"
+                  }
+                ],
+                "parameters": {
+                  "REPTILE_EXAMPLES": ["reptileExGood.png", "reptileExBad.png"]
+                },
+                "parentTextBlock": {
+                  "css": {
+                    "font-size": "1em"
+                  },
+                  "text": " One at a time, point to the highlighted animals, name the animal, and tell your child the animal is a reptile. For example, (pointing to a lizard) 'This is a lizard. A lizard is a reptile.' Only point out these three animals.",
+                  "title": "IMPORTANT! For parents"
+                }
+              },
+              {
+                "kind": "exp-lookit-video",
+                "video": {
+                  "source": "reptileTest",
+                  "loop": false
+                },
+                "parentTextBlock": {
+                  "css": {
+                    "font-size": "1.5em"
+                  },
+                  "text": "Please sit outside of your child’s direct line of sight and try not to influence their answer.",
+                  "title": "For parents"
+                }
+              }
+            ],
+            "commonFrameProperties": {
+              "baseDir": "https://985capstonestimuli.s3.amazonaws.com/",
+              "id": "reptile-group",
+              "videoTypes": ["mp4"],
+              "autoProceed": false,
+              "doRecording": true,
+              "position": "fill"
+            }
+          },
+          {
+            "kind": "group",
+            "frameList": [
+              {
+                "kind": "exp-lookit-video",
+                "video": {
+                  "source": "amphibianDef",
+                  "loop": false
+                },
+                "parentTextBlock": {
+                  "css": {
+                    "font-size": "1.5em"
+                  },
+                  "text": "Please help keep your child's attention. Feel free to replay the audio if your child was distracted.",
+                  "title": "For parents"
+                }
+              },
+              {
+                "kind": "exp-lookit-images-audio",
+                "images": [
+                  {
+                    "id": "amphibianEx",
+                    "src": "AMPHIBIAN_EXAMPLES#RAND"
+                  }
+                ],
+                "parameters": {
+                  "AMPHIBIAN_EXAMPLES": [
+                    "amphibianExGood.png",
+                    "amphibianExBad.png"
+                  ]
+                },
+                "parentTextBlock": {
+                  "css": {
+                    "font-size": "1em"
+                  },
+                  "text": " One at a time, point to the highlighted animals, name the animal, and tell your child the animal is an amphibian. For example, (pointing to a tree frog) 'This is a tree frog. A tree frog is an amphibian.' Only point out these three animals.",
+                  "title": "IMPORTANT! For parents"
+                }
+              },
+              {
+                "kind": "exp-lookit-video",
+                "video": {
+                  "source": "amphibianTest",
+                  "loop": false
+                },
+                "parentTextBlock": {
+                  "css": {
+                    "font-size": "1.5em"
+                  },
+                  "text": "Please sit outside of your child’s direct line of sight and try not to influence their answer.",
+                  "title": "For parents"
+                }
+              }
+            ],
+            "commonFrameProperties": {
+              "baseDir": "https://985capstonestimuli.s3.amazonaws.com/",
+              "id": "amphibian-group",
+              "videoTypes": ["mp4"],
+              "autoProceed": false,
+              "doRecording": true,
+              "position": "fill"
+            }
+          }
+        ]
+      },
+      "mammals": {
+        "kind": "group",
+        "frameList": [
+          {
+            "kind": "exp-lookit-video",
+            "video": {
+              "source": "mammalDef",
+              "loop": false
+            },
+            "parentTextBlock": {
+              "css": {
+                "font-size": "1.5em"
+              },
+              "text": "Please help keep your child's attention. Feel free to replay the audio if your child was distracted.",
+              "title": "For parents - mammals"
+            }
+          },
+          {
+            "kind": "exp-lookit-images-audio",
+            "images": [
+              {
+                "id": "mammalEx",
+                "src": "MAMMAL_EXAMPLES#RAND"
+              }
+            ],
+            "parameters": {
+              "MAMMAL_EXAMPLES": ["mammalExGood.png", "mammalExBad.png"]
+            },
+            "parentTextBlock": {
+              "css": {
+                "font-size": "1em"
+              },
+              "text": " One at a time, point to the highlighted animals, name the animal, and tell your child the animal is a mammal. For example, (pointing to a cat) 'This is a cat. A cat is a mammal.' Only point out these three animals.",
+              "title": "IMPORTANT! For parents"
+            }
+          },
+          {
+            "kind": "exp-lookit-video",
+            "video": {
+              "source": "mammalTest",
+              "loop": false
+            },
+            "parentTextBlock": {
+              "css": {
+                "font-size": "1.5em"
+              },
+              "text": "Please sit outside of your child’s direct line of sight and try not to influence their answer.",
+              "title": "For parents"
+            }
+          }
+        ],
+        "commonFrameProperties": {
+          "baseDir": "https://985capstonestimuli.s3.amazonaws.com/",
+          "id": "mammal-group",
+          "videoTypes": ["mp4"],
+          "autoProceed": false,
+          "doRecording": true,
+          "position": "fill"
+        }
+      },
+      "exit-survey": {
+        "kind": "exp-lookit-exit-survey",
+        "debriefing": {
+          "text": "Thank you so much for participating in this study \nThis study was motivated by this paper by Tenembaum and Xu: https://web.mit.edu/cocosci/archive/Papers/cogsci00_FINAL.pdf . They showed that both adults and children use examples shown to gauge how broad the concept is. Thus, there are better and worse sets example to show to teach a concept. For example, showing three images of dalmatians is a terrible way to explain what a ‘dog’ is because these examples will make someone think that all dogs have black and white spots. Instead, a more representative set of examples would be a poodle, a golden retriever, and a husky. \nIn this study, we wanted to know if parents could recognize this and go out of their way to turn a “bad” set of examples into a “better” one to help their children learn a concept. When analyzing this study, we will measure whether the parent (you) chose to point out non-highlighted animals of the category during the teaching phase of the trial. \nThank you again for participating! We'll be emailing you a $5 Amazon gift card - this should arrive in your inbox within the next week after we confirm that a child is with you in the video recording and check that your child is in the age range for this study. If you don't hear from us by then, feel free to reach out! Please don’t hesitate to contact me at shengyiw@mit.edu if you have any additional questions or feedback!",
+          "title": "Thank you for your participation!"
+        },
+        "showDatabraryOptions": false,
+        "includeWithdrawalExample": true,
+        "privateLevelOnly": true,
+        "additionalVideoPrivacyText": "Data will be available for viewing only to the students, faculty, and teaching assistants in the class for the duration of the class and will be deleted by December 20th, 2024."
+      }
+    },
+    "sequence": [
+      "video-config",
+      "survey-consent",
+      "video-quality",
+      "instructions",
+      "test-trials",
+      "exit-survey"
+    ]
+  }
