@@ -2,23 +2,23 @@
   "frames": {
     "video-config": {
       "kind": "exp-video-config",
-      "troubleshootingIntro": "If you're having any trouble getting your webcam set up, please feel free to email Shengyi Wu at shengyiw@mit.edu and we'd be glad to help you out!"
+      "troubleshootingIntro": "If you're having any trouble getting your webcam set up, please feel free to email Vivian Han at vivhan@mit.edu and we'd be glad to help you out!"
     },
     "survey-consent": {
       "kind": "exp-lookit-survey-consent",
-      "title": "Consent for a Child’s Participation in a Study for Educational Purposes Only \n Let's Learn About Animals!",
+      "title": "Consent for a Child’s Participation in a Study<br><br>Let's Learn About Animals!",
       "items": [
         {
           "kind": "text-block",
-          "text": "Dear Parents,<br><br>We are inviting your child to participate in a study as part of training MIT undergraduate students in a course on infant and child development. The vast majority of studies posted on Children Helping Science are for research purposes. Studies purely for educational purposes constitute a tiny minority of studies on the platform <1%. However, this particular study will be used only for training students. The results of the study will not be published anywhere."
+          "text": "Dear Parents,<br><br>This study looks at how children learn concepts and categories. This study takes about 15 minutes. During this study your child will learn about 4 different animal categories. For each trial, you will see a short video definition and a few examples of animals in a specific category, then answer a question regarding the category."
         },
         {
           "kind": "text-block",
-          "text": "This study looks at how children learn concepts and categories. In this study, we show your child a video explaining a category of animals, show a few examples of animals in the category, and test their understanding of the category."
+          "text": "During the session, you and your child will be recorded by your computer's webcam and microphone. Before researchers check the data recorded during the session, we will first check that you really agreed to participate by watching your consent recording. If we cannot confirm that you agreed to participate, no one will view any other recordings from this session. At the end of the session, you will choose a privacy level for your webcam recordings - private, scientific, or publicity (more details will be provided at the exit survey at the end of the experiment). You will also have the option to withdraw your recordings. If you do, only your consent recording will be kept and all other recordings will be deleted."
         },
         {
           "kind": "text-block",
-          "text": "All parts of the experiment will be recorded, but no videos will be downloaded and all videos will be available for viewing only to the students, faculty, and teaching assistants in the class for the duration of the class and will be deleted by December 20th, 2024."
+          "text": "After you finish the study, we will email you a $5 Amazon gift card (via a code that can be entered online) within five days to thank you for your time. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience."
         },
         {
           "kind": "text-block",
@@ -26,7 +26,7 @@
         },
         {
           "kind": "text-block",
-          "text": "If you have questions about the details of the study, you can contact shengyiw@mit.edu. If you have any additional questions, you can contact the faculty member teaching the class, Laura Schulz at lschulz@mit.edu."
+          "text": "If you have questions about the details of the study, you can contact us at vivhan@mit.edu."
         },
         {
           "kind": "checkbox-item",
@@ -79,23 +79,6 @@
       "kind": "exp-lookit-instructions",
       "blocks": [
         {
-          "title": "Overview of what will happen in this study",
-          "listblocks": [
-            {
-              "text": "There will be three phases of each trial: definition, examples, and testing."
-            },
-            {
-              "text": "First, we will define an animal category (e.g. dog). Please make sure your child is paying attention to the video."
-            },
-            {
-              "text": "Next, we will show a screen with many animals. Point out the highlighted examples to your child. For example, (pointing to a poodle) 'This is a poodle. A poodle is a dog.' Only point out these three animals."
-            },
-            {
-              "text": "Lastly, we’ll ask your child if a specific animal is in the category. Your child should responding verbally. For this section, please sit outside of your child’s direct line of sight and try not to influence their answer."
-            }
-          ]
-        },
-        {
           "text": "Please try playing this sample audio to make sure you'll be able to hear the story.",
           "title": "Adjust your speakers",
           "mediaBlock": {
@@ -145,7 +128,10 @@
         },
         {
           "kind": "exp-lookit-video",
-          "source": "dog_def"
+          "video": {
+            "source": "dog_def"
+          },
+          "autoProceed": true
         },
         {
           "kind": "exp-lookit-text",
@@ -157,7 +143,10 @@
         },
         {
           "kind": "exp-lookit-video",
-          "source": "dog_examples"
+          "video": {
+            "source": "dog_examples"
+          },
+          "autoProceed": true
         },
         {
           "kind": "exp-lookit-text",
@@ -171,26 +160,52 @@
           ]
         },
         {
-          "kind": "exp-lookit-images-audio",
           "audio": "dog_test",
           "images": [
             {
-              "src": "dog_test",
+              "src": "dog_test.png",
               "position": "center",
               "nonChoiceOption": true
             },
             {
-              "src": "yes",
+              "src": "yes.png",
               "position": "left"
             },
             {
-              "src": "no",
+              "src": "no.png",
               "position": "right"
             }
           ],
-          "canMakeChoiceBeforeAudioFinished": false
+          "choiceRequired": true,
+          "autoProceed": true,
+          "canMakeChoiceBeforeAudioFinished": false,
+          "parentTextBlock": {
+            "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
+            "title": "For parents",
+            "css": "{'font-size': 'small'}"
+          }
+        },
+        {
+          "audio": "dog_next",
+          "images": [
+            {
+              "src": "dog_next.png",
+              "position": "fill"
+            }
+          ]
         }
-      ]
+      ],
+      "commonFrameProperties": {
+        "baseDir": "https://raw.githubusercontent.com/vivianhan404/animal-categories/master",
+        "doRecording": true,
+        "position": "fill",
+        "videoTypes": ["mp4"],
+        "audioTypes": ["mp3"],
+        "kind": "exp-lookit-images-audio",
+        "autoProceed": false,
+        "showPreviousButton": false,
+        "showReplayButton": false
+      }
     },
     "inclusion-trial": {
       "kind": "group",
@@ -517,18 +532,31 @@
     "exit-survey": {
       "kind": "exp-lookit-exit-survey",
       "debriefing": {
-        "text": "Thank you so much for participating in this study \nThis study was motivated by this paper by Tenembaum and Xu: https://web.mit.edu/cocosci/archive/Papers/cogsci00_FINAL.pdf . They showed that both adults and children use examples shown to gauge how broad the concept is. Thus, there are better and worse sets example to show to teach a concept. For example, showing three images of dalmatians is a terrible way to explain what a ‘dog’ is because these examples will make someone think that all dogs have black and white spots. Instead, a more representative set of examples would be a poodle, a golden retriever, and a husky. \nIn this study, we wanted to know if parents could recognize this and go out of their way to turn a “bad” set of examples into a “better” one to help their children learn a concept. When analyzing this study, we will measure whether the parent (you) chose to point out non-highlighted animals of the category during the teaching phase of the trial. \nThank you again for participating! We'll be emailing you a $5 Amazon gift card - this should arrive in your inbox within the next week after we confirm that a child is with you in the video recording and check that your child is in the age range for this study. If you don't hear from us by then, feel free to reach out! Please don’t hesitate to contact me at shengyiw@mit.edu if you have any additional questions or feedback!",
-        "title": "Thank you for your participation!"
+        "blocks": [
+          {
+            "text": "Thank you for participating in this study! Your child saw examples of concepts (e.g., examples of 'mammals' or 'reptiles'). However, there are better and worse examples to show a child if you want to teach them a new concept. For example, if you are trying to teach a toddler what a 'dog' is, showing them a Dalmatian, a Golden Retriever, a Beagle, and a Husky Dog is more useful than showing the four different Dalmatians. Here we were interested in parents' intuitions about the relationship between the examples and the concept, and their reaction to the misleading examples. In particular, we were interested in whether parents would spontaneously 'correct' the misleading examples by providing the child with additional examples. Thus, although the study was set up to look like an experiment on children's learning, we were actually interested in analyzing, not the children's performance on the questions asked, but adult behavior during the teaching portion of the tasks."
+          },
+          {
+            "text": "There were no right or wrong responses in this study. Parents were told to let the child respond on their own and not to interfere with any aspect of the experiment. If you let the study run without any deviation from the experiment design, that was a perfectly reasonable decision, and indeed what we'd asked you to do. However, in many studies, some parents do nonetheless 'interfere' with the design in one way or another. These participants are typically excluded from the analysis, but in this case, parental interference was the focus of the research. We believed parents might be more likely to 'interfere' with the study and point out additional examples of the concept in the trials where we gave the children misleading examples (e.g., showing only pets as examples of mammals, or only snakes as reptiles) than in the trials where we gave children representative examples (e.g., showing a snake, an iguana, a crocodile and a turtle as examples of reptiles). Investigating parents' responses to both 'good' and 'bad' instances of teaching can help us understand people's intuitive understanding of how the representativeness of examples affects learners' inferences. It can also help us understand the contexts in which parents might interfere with developmental studies, not because the parents are non-compliant, but because they are trying to support their child’s learning."
+          },
+          {
+            "text": "Thank you again for participating in this study. Developmental research would be impossible without parental support. Please note that you have the right to withdraw your data from the study if you wish. We'll be emailing you a $5 Amazon gift card. This should arrive in your inbox within the next week after we confirm that a child is with you in the video recording and check that your child is in the age range for this study. If you don't hear from us by then, feel free to reach out! Please don't hesitate to contact us at vivhan@mit.edu if you have any additional questions or feedback!"
+          }
+        ]
       },
       "showDatabraryOptions": false,
       "includeWithdrawalExample": true,
-      "privateLevelOnly": true,
-      "additionalVideoPrivacyText": "Data will be available for viewing only to the students, faculty, and teaching assistants in the class for the duration of the class and will be deleted by December 20th, 2024."
+      "privateLevelOnly": true
     }
   },
   "sequence": [
     "video-config",
     "survey-consent",
-    "inclusion-trial"
+    "video-quality",
+    "instructions",
+    "tutorial",
+    "inclusion-trial",
+    "test-trials",
+    "exit-survey"
   ]
 }
