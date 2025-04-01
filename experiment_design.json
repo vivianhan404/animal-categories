@@ -146,7 +146,15 @@
           "video": {
             "source": "dog_examples"
           },
-          "autoProceed": true
+          "autoProceed": true,
+          "parentTextBlock": {
+            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a dalmatian. A dalmatian is a dog.",
+            "title": "Parent's task",
+            "css": {
+              "background-color": "cyan",
+              "font-size": "medium"
+            }
+          }
         },
         {
           "kind": "exp-lookit-text",
@@ -182,7 +190,9 @@
           "parentTextBlock": {
             "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
             "title": "For parents",
-            "css": "{'font-size': 'small'}"
+            "css": {
+              "font-size": "small"
+            }
           }
         },
         {
@@ -226,8 +236,12 @@
             }
           ],
           "parentTextBlock": {
-            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category.",
-            "title": "For parents"
+            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a tuna. A tuna is a fish.",
+            "title": "Parent's task",
+            "css": {
+              "background-color": "cyan",
+              "font-size": "medium"
+            }
           }
         },
         {
@@ -253,7 +267,9 @@
           "parentTextBlock": {
             "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
             "title": "For parents",
-            "css": "{'font-size': 'small'}"
+            "css": {
+              "font-size": "small"
+            }
           }
         },
         {
@@ -298,8 +314,12 @@
             }
           ],
           "parentTextBlock": {
-            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category.",
-            "title": "For parents"
+            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a rabbit. A rabbit is a mammal.",
+            "title": "Parent's task",
+            "css": {
+              "background-color": "cyan",
+              "font-size": "medium"
+            }
           }
         },
         {
@@ -325,7 +345,9 @@
           "parentTextBlock": {
             "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
             "title": "For parents",
-            "css": "{'font-size': 'small'}"
+            "css": {
+              "font-size": "small"
+            }
           }
         },
         {
@@ -353,8 +375,12 @@
             }
           ],
           "parentTextBlock": {
-            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category.",
-            "title": "For parents"
+            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a tiger snake. A tiger snake is a reptile.",
+            "title": "Parent's task",
+            "css": {
+              "background-color": "cyan",
+              "font-size": "medium"
+            }
           }
         },
         {
@@ -380,7 +406,9 @@
           "parentTextBlock": {
             "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
             "title": "For parents",
-            "css": "{'font-size': 'small'}"
+            "css": {
+              "font-size": "small"
+            }
           }
         },
         {
@@ -408,8 +436,12 @@
             }
           ],
           "parentTextBlock": {
-            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category.",
-            "title": "For parents"
+            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a june beetle. A june beetle is an insect.",
+            "title": "Parent's task",
+            "css": {
+              "background-color": "cyan",
+              "font-size": "medium"
+            }
           }
         },
         {
@@ -435,7 +467,9 @@
           "parentTextBlock": {
             "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
             "title": "For parents",
-            "css": "{'font-size': 'small'}"
+            "css": {
+              "font-size": "small"
+            }
           }
         },
         {
@@ -463,8 +497,12 @@
             }
           ],
           "parentTextBlock": {
-            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category.",
-            "title": "For parents"
+            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a tawny owl. A tawny owl is a bird of prey.",
+            "title": "Parent's task",
+            "css": {
+              "background-color": "cyan",
+              "font-size": "medium"
+            }
           }
         },
         {
@@ -490,7 +528,9 @@
           "parentTextBlock": {
             "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
             "title": "For parents",
-            "css": "{'font-size': 'small'}"
+            "css": {
+              "font-size": "small"
+            }
           }
         },
         {
