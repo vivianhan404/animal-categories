@@ -4,36 +4,18 @@
       "kind": "exp-video-config",
       "troubleshootingIntro": "If you're having any trouble getting your webcam set up, please feel free to email Vivian Han at vivhan@mit.edu and we'd be glad to help you out!"
     },
-    "survey-consent": {
-      "kind": "exp-lookit-survey-consent",
-      "title": "Consent for a Child’s Participation in a Study<br><br>Let's Learn About Animals!",
-      "items": [
-        {
-          "kind": "text-block",
-          "text": "Dear Parents,<br><br>This study looks at how children learn concepts and categories. This study takes about 15 minutes. During this study your child will learn about 4 different animal categories. For each trial, you will see a short video definition and a few examples of animals in a specific category, then answer a question regarding the category."
-        },
-        {
-          "kind": "text-block",
-          "text": "During the session, you and your child will be recorded by your computer's webcam and microphone. Before researchers check the data recorded during the session, we will first check that you really agreed to participate by watching your consent recording. If we cannot confirm that you agreed to participate, no one will view any other recordings from this session. At the end of the session, you will choose a privacy level for your webcam recordings - private, scientific, or publicity (more details will be provided at the exit survey at the end of the experiment). You will also have the option to withdraw your recordings. If you do, only your consent recording will be kept and all other recordings will be deleted."
-        },
-        {
-          "kind": "text-block",
-          "text": "After you finish the study, we will email you a $5 Amazon gift card (via a code that can be entered online) within five days to thank you for your time. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience."
-        },
-        {
-          "kind": "text-block",
-          "text": "I understand that participation in this study is entirely voluntary, and if I decide that I do not want my child to take part, they can stop taking part in this study at any time without giving a reason."
-        },
-        {
-          "kind": "text-block",
-          "text": "If you have questions about the details of the study, you can contact us at vivhan@mit.edu."
-        },
-        {
-          "kind": "checkbox-item",
-          "text": "I am this child’s parent or legal guardian and I give my permission for the child to participate in this study",
-          "label": "consent"
-        }
-      ]
+    "video-consent": {
+      "kind": "exp-lookit-video-consent",
+      "template": "consent_005",
+      "PIName": "Laura Schulz",
+      "institution": "Massachusetts Institute of Technology",
+      "PIContact": "the ECCL lab at vivhan@mit.edu",
+      "purpose": "Children have an amazing ability to learn new concepts from very little information. When learning a new category, they only need to see a few examples to understand what kinds of things that category encompasses and to generalize to other instances of that category. In this study, we want to explore how children use definitions and examples to learn about very broad categories (e.g. 'mammals').",
+      "procedures": "This study takes about 15 minutes. During this study your child will learn about 4 different animal categories. For each trial, you will see a short video definition and a few examples of animals in a specific category, then answer a question regarding the category.",
+      "risk_statement": "There are no expected risks if you participate in the study.",
+      "payment": "After you finish the study, we will email you a $5 Amazon gift card (via a code that can be entered online) within five days to thank you for your time. To be eligible for the gift card your child must be in the age range for this study, you need to submit a valid consent statement, and we need to see that there is a child with you. But we will send a gift card even if you do not finish the whole study or we are not able to use your child's data! There are no other direct benefits to you or your child from participating, but we hope you will enjoy the experience.",
+      "include_databrary": true,
+      "research_rights_statement": "You are not waiving any legal claims, rights or remedies because of your participation in this research study.  If you feel you have been treated unfairly, or you have questions regarding your rights as a research subject, you may contact the Committee On the Use of Humans as Experimental Subjects (COUHES), Massachusetts of Technology, 77 Massachusetts Avenue Cambridge, MA 02139 (contact: couhes@mit.edu)"
     },
     "video-quality": {
       "kind": "exp-video-config-quality",
@@ -137,16 +119,18 @@
           "kind": "exp-lookit-text",
           "blocks": [
             {
-              "text": "Next, you will help us show your child a few examples of dogs. On the next slide, there will be a grid of animals. Four pictures of dogs will be highlighted. Please point at each highlighted animal, name it, and explain to your child that it is in the category."
+              "text": "Next, you will help us show your child a few examples of dogs. On the next slide, there will be a grid of animals. Four pictures of dogs will be highlighted. Please point at each highlighted animal, name it, and explain to your child that it is in the category. We'll first demonstrate what we'd like you to do for the first three examples. Then, we'll ask you to do the same for the last animal."
             }
           ]
         },
         {
-          "kind": "exp-lookit-video",
-          "video": {
-            "source": "dog_examples"
-          },
-          "autoProceed": true,
+          "audio": "dog_examples",
+          "images": [
+            {
+              "src": "dog_examples.png",
+              "position": "fill"
+            }
+          ],
           "parentTextBlock": {
             "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a dalmatian. A dalmatian is a dog.",
             "title": "Parent's task",
@@ -591,8 +575,8 @@
   },
   "sequence": [
     "video-config",
-    "survey-consent",
     "video-quality",
+    "video-consent",
     "instructions",
     "tutorial",
     "inclusion-trial",
