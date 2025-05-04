@@ -135,7 +135,6 @@
             "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a dalmatian. A dalmatian is a dog.",
             "title": "Parent's task",
             "css": {
-              "background-color": "cyan",
               "font-size": "medium"
             }
           }
@@ -170,14 +169,7 @@
           ],
           "choiceRequired": true,
           "autoProceed": true,
-          "canMakeChoiceBeforeAudioFinished": false,
-          "parentTextBlock": {
-            "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
-            "title": "For parents",
-            "css": {
-              "font-size": "small"
-            }
-          }
+          "canMakeChoiceBeforeAudioFinished": false
         },
         {
           "audio": "dog_next",
@@ -223,7 +215,6 @@
             "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a tuna. A tuna is a fish.",
             "title": "Parent's task",
             "css": {
-              "background-color": "cyan",
               "font-size": "medium"
             }
           }
@@ -247,14 +238,7 @@
           ],
           "choiceRequired": true,
           "autoProceed": true,
-          "canMakeChoiceBeforeAudioFinished": false,
-          "parentTextBlock": {
-            "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
-            "title": "For parents",
-            "css": {
-              "font-size": "small"
-            }
-          }
+          "canMakeChoiceBeforeAudioFinished": false
         },
         {
           "audio": "fish_next",
@@ -298,10 +282,9 @@
             }
           ],
           "parentTextBlock": {
-            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a rabbit. A rabbit is a mammal.",
+            "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a guinea pig. A guinea pig is a mammal.'",
             "title": "Parent's task",
             "css": {
-              "background-color": "cyan",
               "font-size": "medium"
             }
           }
@@ -325,14 +308,7 @@
           ],
           "choiceRequired": true,
           "autoProceed": true,
-          "canMakeChoiceBeforeAudioFinished": false,
-          "parentTextBlock": {
-            "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
-            "title": "For parents",
-            "css": {
-              "font-size": "small"
-            }
-          }
+          "canMakeChoiceBeforeAudioFinished": false
         },
         {
           "audio": "mammal_next",
@@ -362,7 +338,6 @@
             "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a tiger snake. A tiger snake is a reptile.",
             "title": "Parent's task",
             "css": {
-              "background-color": "cyan",
               "font-size": "medium"
             }
           }
@@ -386,14 +361,7 @@
           ],
           "choiceRequired": true,
           "autoProceed": true,
-          "canMakeChoiceBeforeAudioFinished": false,
-          "parentTextBlock": {
-            "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
-            "title": "For parents",
-            "css": {
-              "font-size": "small"
-            }
-          }
+          "canMakeChoiceBeforeAudioFinished": false
         },
         {
           "audio": "reptile_next",
@@ -423,7 +391,6 @@
             "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a june beetle. A june beetle is an insect.",
             "title": "Parent's task",
             "css": {
-              "background-color": "cyan",
               "font-size": "medium"
             }
           }
@@ -447,14 +414,7 @@
           ],
           "choiceRequired": true,
           "autoProceed": true,
-          "canMakeChoiceBeforeAudioFinished": false,
-          "parentTextBlock": {
-            "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
-            "title": "For parents",
-            "css": {
-              "font-size": "small"
-            }
-          }
+          "canMakeChoiceBeforeAudioFinished": false
         },
         {
           "audio": "insect_next",
@@ -484,7 +444,6 @@
             "text": "Please point at each highlighted animal, name it, and explain to your child that it is in the category. For example, 'Look over here. This is a tawny owl. A tawny owl is a bird of prey.",
             "title": "Parent's task",
             "css": {
-              "background-color": "cyan",
               "font-size": "medium"
             }
           }
@@ -508,14 +467,7 @@
           ],
           "choiceRequired": true,
           "autoProceed": true,
-          "canMakeChoiceBeforeAudioFinished": false,
-          "parentTextBlock": {
-            "text": "If your child cannot click the answer, they can point or respond verbally and you can click for them. However, please let your child respond on their own and do not try to influence your child's answer.",
-            "title": "For parents",
-            "css": {
-              "font-size": "small"
-            }
-          }
+          "canMakeChoiceBeforeAudioFinished": false
         },
         {
           "audio": "bird_next",
@@ -565,6 +517,9 @@
           },
           {
             "text": "Thank you again for participating in this study. Developmental research would be impossible without parental support. Please note that you have the right to withdraw your data from the study if you wish. We'll be emailing you a $5 Amazon gift card. This should arrive in your inbox within the next week after we confirm that a child is with you in the video recording and check that your child is in the age range for this study. If you don't hear from us by then, feel free to reach out! Please don't hesitate to contact us at vivhan@mit.edu if you have any additional questions or feedback!"
+          },
+          {
+            "text": "This project was inspired in part by <a href='https://web.mit.edu/cocosci/archive/Papers/cogsci00_FINAL.pdf' target='_blank' rel='noopener'>Xu and Tenenbaum, 2007</a>. In this paper, they show that when learning a new category, people use examples to figure out how broad or narrow the category is. <a href='https://www.pnas.org/doi/10.1073/pnas.1003095107' target='_blank' rel='noopener'>Gweon et al. 2010</a> is another paper showing how different types of examples affect the conclusions infants draw. Also, check out <a href='https://www.randomlists.com/random-animals' target='_blank' rel='noopener'>https://www.randomlists.com/random-animals</a> if you want to look at some more pictures of animals."
           }
         ]
       },
